@@ -1,0 +1,19 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: _discovery-server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true #default new version --->
+    fetch-registry: true #default new version --->
+    healthcheck:
+      enabled: true #default new version --->
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #default new version --->

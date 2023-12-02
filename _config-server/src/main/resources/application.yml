@@ -1,0 +1,20 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: _config-server
+#This is for config server to allocate where we put configuration on the location
+  cloud:
+   config:
+    server:
+      git:
+        uri: ads
+        default-label: master
+#This is for eureka client
+eureka:
+  client:
+    register-with-eureka: true #default
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+    healthcheck:
+      enabled: true #deafult
