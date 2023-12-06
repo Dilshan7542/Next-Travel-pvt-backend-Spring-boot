@@ -28,13 +28,14 @@ public class Booking {
     private double paidValue;
     @Column(nullable = false)
     private boolean paymentStatus;
-    @Column(nullable = false)
-    private int hotelID;
-    @Column(nullable = false)
-    private int vehicleID;
-    private int guideID;
-    @Column(nullable = false)
-    private int travelID;
+    @Column(nullable = false,columnDefinition = "LongText")
+    private String hotel;
+    @Column(nullable = false,columnDefinition = "LongText")
+    private String vehicle;
+    @Column(columnDefinition = "LongText")
+    private String guide;
+    @Column(nullable = false,columnDefinition = "LongText")
+    private String travel;
    @ManyToOne
    @JoinColumn(name = "customerID")
     private Customer customer;

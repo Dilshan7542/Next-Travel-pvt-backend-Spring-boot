@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="travel-service" />
         <module name="auth-service" />
+        <module name="_config-server" />
         <module name="_discovery-server" />
         <module name="vehicle-service" />
         <module name="customer-service" />
@@ -16,9 +17,6 @@
         <module name="hotel-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="_config-server" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

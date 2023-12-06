@@ -16,5 +16,15 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="@localhost [2]" uuid="52a04417-071d-4151-b0f7-9b25bdf75bea">
+      <database-info product="Mongo DB" version="7.0.1" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="7.0.1" exact-driver-version="1.18" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="next_travel" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

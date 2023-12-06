@@ -1,7 +1,7 @@
 package lk.travel.hotelservice.service;
 
 import lk.travel.hotelservice.dto.HotelDTO;
-import lk.travel.vehicleservice.dto.VehicleBrandDTO;
+
 
 import java.util.List;
 

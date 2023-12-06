@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/vehicle-service/pom.xml" />
         <option value="$PROJECT_DIR$/_discovery-server/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/_config-server/pom.xml" />
       </list>
     </option>
   </component>

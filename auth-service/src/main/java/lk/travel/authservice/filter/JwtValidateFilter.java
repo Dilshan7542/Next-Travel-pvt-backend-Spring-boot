@@ -27,6 +27,7 @@ public class JwtValidateFilter extends OncePerRequestFilter {
         if(header !=null && !header.startsWith("Basic") && header.length()>10) {
             System.out.println("JWT VALIDATE");
             header = header.startsWith("Bearer ") ? header.substring(7) : header;
+            System.out.println(header);
             SecretKey secretKey = Keys.hmacShaKeyFor(SecurityConstant.JWT_SECRET_KEY_USER.getBytes(StandardCharsets.UTF_8));
 
             Claims claims = Jwts.parserBuilder()

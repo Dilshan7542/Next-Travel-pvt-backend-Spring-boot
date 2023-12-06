@@ -7,6 +7,7 @@ import lk.travel.authservice.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,9 +22,16 @@ public class UserServiceImpl implements UserService {
     ModelMapper mapper;
     @Override
     public UserDTO saveUser(UserDTO userDTO) {
+
+        List<Users> list = userRepo.findAllByOrderByUserIDDesc(PageRequest.of(0, 1));
+        int nextID=0;
+        if(!list.isEmpty()){
+            nextID=list.get(0).getUserID();
+        }
         if(userRepo.existsById(userDTO.getUserID())){
             throw new RuntimeException("User Already Exists ...!!");
         }
+        userDTO.setUserID(++nextID);
             userRepo.save(mapper.map(userDTO, Users.class));
         return userDTO;
     }

@@ -16,12 +16,12 @@ import java.util.List;
 public class BookingController {
     private final BookingService bookingService;
 
-  @PostMapping(path = "save",consumes = MediaType.APPLICATION_JSON_VALUE)
+  @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity saveBooking(@RequestBody BookingDTO bookingDTO) {
         return new ResponseEntity(bookingService.saveBooking(bookingDTO), HttpStatus.OK);
     }
 
-    @PutMapping(path = "update")
+    @PutMapping
     public ResponseEntity<BookingDTO> updateBooking(@RequestBody BookingDTO bookingDTO) {
         return new ResponseEntity(bookingService.updateBooking(bookingDTO), HttpStatus.OK);
     }
@@ -34,7 +34,12 @@ public class BookingController {
     }
     @GetMapping(path = "search/customer", params = "customerID")
     public ResponseEntity<List<BookingDTO>> searchBookingCustomerID(@RequestParam int customerID) {
-        return new ResponseEntity(bookingService.searchBookingCustomerID(customerID), HttpStatus.OK);
+        System.out.println(customerID);
+        List<BookingDTO> bookingDTOS = bookingService.searchBookingCustomerID(customerID);
+        for (BookingDTO bookingDTO : bookingDTOS) {
+            System.out.println(bookingDTO.getTravel());
+        }
+        return new ResponseEntity(bookingDTOS, HttpStatus.OK);
     }
 
 

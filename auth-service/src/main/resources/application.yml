@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/next_travel
+      auto-index-creation: true
+

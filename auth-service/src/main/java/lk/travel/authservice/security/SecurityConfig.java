@@ -33,7 +33,7 @@ public class SecurityConfig {
                         @Override
                         public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                             CorsConfiguration corsConfiguration = new CorsConfiguration();
-                            corsConfiguration.setAllowedOrigins(Arrays.asList("*"));
+                            corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:63342"));
                             corsConfiguration.setAllowedHeaders(Collections.singletonList("*"));
                             corsConfiguration.setAllowedMethods(Collections.singletonList("*"));
                             corsConfiguration.setAllowCredentials(true);
@@ -50,14 +50,12 @@ public class SecurityConfig {
                 .addFilterAfter(new JwtGenerateFilter(), BasicAuthenticationFilter.class)
                 .authorizeHttpRequests(request -> {
                     request
-                            .requestMatchers("/api/v1/customer/register").permitAll()
+                            .requestMatchers("/api/v1/customer/register","/api/v1/vehicle/brand/search/**","/api/v1/hotel/search/**").permitAll()
                             .requestMatchers("api/v1/user/register","api/v1/user/update").hasRole("MANAGER")
-                            .requestMatchers(
-                                    "api/v1/booking/update",
-                                    "api/v1/booking/save",
-                                    "api/v1/booking/search/customer",
-                                    "api/v1/customer/update","api/v1/customer/search/**").hasAnyRole("USER")
-                            .requestMatchers("api/v1/**").hasAnyRole("MANAGER","ADMIN").anyRequest().authenticated();
+                            .requestMatchers("api/v1/customer/update","api/v1/customer/search/**").hasAnyRole("USER")
+                            .requestMatchers("api/v1/travel/**","api/v1/booking/**").hasAnyRole("MANAGER","ADMIN","USER")
+                            .requestMatchers("api/v1/**").hasAnyRole("MANAGER","ADMIN")
+                            .anyRequest().authenticated();
 
                 });
         httpSecurity.httpBasic(Customizer.withDefaults()).formLogin(Customizer.withDefaults());

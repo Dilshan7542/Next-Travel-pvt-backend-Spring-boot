@@ -14,11 +14,17 @@ spring:
       max-file-size: 10MB
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+           '[/**]':
+             allowedOrigins: "*"
+             allowedMethods: "*"
+             allowedHeaders: "*"
       routes:
         - id: auth-service
           uri: lb://auth-service
           predicates:
-            - Path=/api/v1/auth/**,/customer/api/v1/customer/register
+            - Path=/user/api/v1/user/**,/customer/api/v1/customer/register,/customer/api/v1/customer/search/**
           filters:
             - StripPrefix=1
         - id: customer-service
@@ -30,11 +36,24 @@ spring:
         - id: hotel-service
           uri: lb://hotel-service
           predicates:
-            - Path=/api/v1/hotel/**
+            - Path=/hotel/**
+          filters:
+            - StripPrefix=1
+        - id: travel-service
+          uri: lb://travel-service
+          predicates:
+            - Path=/travel/**
+          filters:
+            - StripPrefix=1
+        - id: vehicle-service
+          uri: lb://vehicle-service
+          predicates:
+            - Path=/vehicle/**
           filters:
             - StripPrefix=1
       default-filters:
         - AuthFilter
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
 
 
 

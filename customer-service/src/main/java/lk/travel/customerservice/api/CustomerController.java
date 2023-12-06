@@ -33,8 +33,9 @@ public class CustomerController {
     public ResponseEntity<CustomerDTO> searchCustomer(@PathVariable("customerID") int customerID) {
         return new ResponseEntity<>(customerService.searchCustomer(customerID), HttpStatus.OK);
     }
-    @GetMapping(path = "search/email")
-    public ResponseEntity<CustomerDTO> searchEmailCustomer(@RequestParam String email) {
+    @GetMapping(path = "search/email/{email}")
+    public ResponseEntity<CustomerDTO> searchEmailCustomer(@PathVariable String email) {
+        System.out.println(email);
         return new ResponseEntity<>(customerService.searchByEmailCustomer(email), HttpStatus.OK);
     }
 
@@ -44,7 +45,7 @@ public class CustomerController {
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
-    @GetMapping
+    @GetMapping(path = "all")
     public ResponseEntity<List<CustomerDTO>> getAllCustomer() {
         return new ResponseEntity<>(customerService.getAllCustomer(), HttpStatus.OK);
     }

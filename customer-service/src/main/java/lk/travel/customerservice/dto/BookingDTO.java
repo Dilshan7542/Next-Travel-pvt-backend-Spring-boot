@@ -21,9 +21,9 @@ public class BookingDTO {
     private LocalTime time;
     private double paidValue;
     private boolean paymentStatus;
-    private int travelID;
-    private int hotelID;
-    private int vehicleID;
-    private int guideID;
+    private String travel;
+    private String hotel;
+    private String vehicle;
+    private String guide;
     private CustomerDTO customer;
 }

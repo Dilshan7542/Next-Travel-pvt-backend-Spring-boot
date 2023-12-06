@@ -1,5 +1,6 @@
 package lk.travel.authservice.api;
 
+import lk.travel.authservice.constant.SecurityConstant;
 import lk.travel.authservice.dto.CustomerDTO;
 import lk.travel.authservice.dto.RoleDTO;
 import lk.travel.authservice.dto.UserDTO;
@@ -23,23 +24,31 @@ public class AuthController {
 
     @GetMapping(path = "/**")
     public ResponseEntity<Boolean> allAuthRequest(){
-        System.out.println("is Hereeeee........");
+        System.out.println("ALL VALIDATE TRUE...!!!! (/**)");
         return new ResponseEntity<>(true, HttpStatus.OK);
     }
     @PostMapping(path = "/customer/register")
     public ResponseEntity<CustomerDTO> saveCustomer(@RequestBody CustomerDTO customerDTO){
         System.out.println("Customer Register Method Invoked");
         customerDTO.setPwd(passwordEncoder.encode(customerDTO.getPwd()));
-        Mono<CustomerDTO> customerDTOMono = WebClient.create("http://localhost:8082/api/v1/customer/register")
+        CustomerDTO block = WebClient.create(SecurityConstant.CUSTOMER_URL +"/register")
                 .post().body(Mono.just(customerDTO), CustomerDTO.class).retrieve()
-                .bodyToMono(CustomerDTO.class);
-        customerDTOMono.onErrorResume(e-> Mono.error(new RuntimeException(e)));
-        if (customerDTOMono.block()!=null) {
-            userService.saveUser(new UserDTO(customerDTO.getName(),customerDTO.getEmail(),customerDTO.getPwd(), RoleDTO.USER));
-        System.out.println("Customer Ok.......!!!!");
-        return new ResponseEntity<>(customerDTOMono.block(),HttpStatus.OK);
+                .bodyToMono(CustomerDTO.class).block();
+        if (block!=null) {
+            UserDTO userDTO = userService.saveUser(new UserDTO(customerDTO.getName(), customerDTO.getEmail(), customerDTO.getPwd(), RoleDTO.USER));
+            if (userDTO!=null) {
+            System.out.println("Customer Ok.......!!!!");
+        return new ResponseEntity<>(block,HttpStatus.OK);
+            }
+            WebClient.create(SecurityConstant.CUSTOMER_URL+"/"+customerDTO.getCustomerID()).delete().retrieve().toEntity(Void.class);
         }
         System.out.println("Test Error..!!!");
         throw new RuntimeException("ERROR......!!");
     }
+    @GetMapping(path = "/customer/search/email/{email}")
+    public ResponseEntity<CustomerDTO> searchCustomerByEmail(@PathVariable String email)throws Exception{
+        CustomerDTO body = WebClient.create(SecurityConstant.CUSTOMER_URL + "/search/email/" + email).get().retrieve().toEntity(CustomerDTO.class).block().getBody();
+        return new ResponseEntity<>(body, HttpStatus.OK);
+    }
+
 }

@@ -22,6 +22,7 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<UserDTO> registerUser(@RequestBody UserDTO userDTO) {
         userDTO.setPwd(passwordEncoder.encode(userDTO.getPwd()));
+
         return ResponseEntity.ok(userService.saveUser(userDTO)); // Response ok Mono work
     }
 

@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TravelController {
     private final TravelService travelService;
-    @PostMapping
+    @PostMapping(path = "register")
     public ResponseEntity<TravelDTO> saveTravelCategory(@RequestBody TravelDTO travelDTO) {
         return new ResponseEntity<>(travelService.saveTravel(travelDTO), HttpStatus.OK);
     }
