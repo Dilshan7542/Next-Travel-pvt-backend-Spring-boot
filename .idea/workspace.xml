@@ -4,63 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58d1ed3c-3e0b-42d7-b29f-b5c1e9ed9db9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="58d1ed3c-3e0b-42d7-b29f-b5c1e9ed9db9" name="Changes" comment="Finalize">
+      <change afterPath="$PROJECT_DIR$/auth-service/src/test/java/lk/travel/authservice/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2/storage_v2/_src_/schema/next_travel.5kkxWw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2/storage_v2/_src_/schema/next_travel.5kkxWw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/ApiGateWayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/ApiGateWayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_discovery-server/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_discovery-server/target/classes/lk/travel/discoveryserver/DiscoveryServerApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/AuthFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/RouteValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/RouteValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/ApiGateWayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/ApiGateWayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/advisor/AppWideExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/advisor/AppWideExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/AuthFilter$Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/AuthFilter$Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/AuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/AuthFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/RouteValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/RouteValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/ApiGateWayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/advisor/AppWideExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/AuthFilter$Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/AuthFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/target/classes/lk/travel/apigateway/filter/RouteValidator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/api/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/api/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/api/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/constant/SecurityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/constant/SecurityConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/entity/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/filter/JwtValidateFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/filter/JwtValidateFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/repo/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/AuthenticationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/AuthenticationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/advisor/AppWideExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/advisor/AppWideExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/api/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/api/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/api/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/api/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/constant/SecurityConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/constant/SecurityConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/entity/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/filter/JwtValidateFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/filter/JwtValidateFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/repo/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/repo/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/SecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/SecurityConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/impl/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/impl/UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/AuthServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/advisor/AppWideExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/api/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/api/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/constant/SecurityConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/dto/CustomerDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/dto/RoleDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/dto/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/filter/CsrfCookieFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/filter/JwtGenerateFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/filter/JwtValidateFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/repo/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/AuthenticationConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/SecurityConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/impl/UserServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/lk/travel/authservice/service/impl/UserServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/api/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/api/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/api/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/api/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/dto/BookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/dto/BookingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/entity/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/advisor/AppWideExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/advisor/AppWideExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/api/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/api/BookingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/api/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/api/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/dto/BookingDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/dto/BookingDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/entity/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/entity/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/java/lk/travel/hotelservice/service/HotelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/src/main/java/lk/travel/hotelservice/service/HotelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/api/TravelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/api/TravelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/travel/vehicleservice/VehicleServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/travel/vehicleservice/VehicleServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/repo/BookingRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/repo/BookingRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/service/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/lk/travel/customerservice/service/impl/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/CustomerServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/advisor/AppWideExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/api/BookingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/api/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/dto/BookingDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/dto/CustomerDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/entity/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/entity/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/repo/BookingRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/repo/CustomerRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/BookingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/impl/BookingServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/impl/BookingServiceImpl$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/impl/BookingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/impl/CustomerServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/lk/travel/customerservice/service/impl/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/dto/TravelAreaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/dto/TravelAreaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/dto/TravelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/dto/TravelDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/entity/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/entity/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/entity/TravelArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/entity/TravelArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/src/main/java/lk/travel/travelservice/entity/TravelLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/target/classes/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +84,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,6 +95,9 @@
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -105,7 +122,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/.WORK AREA/Spring-boot/Spring-Microservices/Next-Travel-PVT-Backend/_config-server/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/.WORK AREA/Spring/thogakade/thogakade&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -130,6 +147,7 @@
       <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\auth-service\src\main\java\lk\travel\authservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\auth-service\src\main\java\lk\travel\authservice" />
       <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -143,13 +161,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGateWayApplication">
     <configuration name="ApiGateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.apigateway.ApiGateWayApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lk.travel.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.authservice.AuthServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.travel.authservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="_discovery-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.discoveryserver.DiscoveryServerApplication" />
+    <configuration name="HotelServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hotel-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.hotelservice.HotelServiceApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.travel.discoveryserver.*" />
+          <option name="PATTERN" value="lk.travel.hotelservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,33 +227,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="vehicle-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.vehicleservice.VehicleServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lk.travel.vehicleservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Spring Boot.ApiGateWayApplication" />
-      <item itemvalue="Spring Boot.DiscoveryServerApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.HotelServiceApplication" />
       <item itemvalue="Spring Boot.TravelServiceApplication" />
-      <item itemvalue="Spring Boot.VehicleServiceApplication" />
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DiscoveryServerApplication" />
         <item itemvalue="Spring Boot.CustomerServiceApplication" />
         <item itemvalue="Spring Boot.ApiGateWayApplication" />
+        <item itemvalue="Spring Boot.AuthServiceApplication" />
         <item itemvalue="Spring Boot.TravelServiceApplication" />
-        <item itemvalue="Spring Boot.VehicleServiceApplication" />
+        <item itemvalue="Spring Boot.HotelServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -242,11 +260,39 @@
       <workItem from="1701628043022" duration="602000" />
       <workItem from="1701703671037" duration="5171000" />
       <workItem from="1701742295318" duration="7442000" />
-      <workItem from="1701803031620" duration="24928000" />
+      <workItem from="1701803031620" duration="26286000" />
+      <workItem from="1701845166035" duration="733000" />
+      <workItem from="1702464387206" duration="819000" />
+      <workItem from="1702468180536" duration="50000" />
+      <workItem from="1702936731468" duration="1416000" />
+      <workItem from="1705109923482" duration="5649000" />
+      <workItem from="1705147530178" duration="1885000" />
+      <workItem from="1705158277538" duration="18477000" />
+      <workItem from="1705237685371" duration="6380000" />
+      <workItem from="1705263414897" duration="5593000" />
+      <workItem from="1705373095894" duration="3527000" />
+      <workItem from="1705422623564" duration="600000" />
+      <workItem from="1705427549689" duration="12062000" />
+      <workItem from="1705836069370" duration="31000" />
+      <workItem from="1706012666669" duration="384000" />
     </task>
+    <task id="LOCAL-00001" summary="Update MongoDB">
+      <option name="closed" value="true" />
+      <created>1701836681324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701836681324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update MongoDB" />
+    <MESSAGE value="Finalize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalize" />
   </component>
 </project>

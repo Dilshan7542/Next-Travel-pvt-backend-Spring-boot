@@ -23,6 +23,7 @@ public class JwtValidateFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String header = request.getHeader(HttpHeaders.AUTHORIZATION);
+        System.out.println(header);
         System.out.println("Auth Path:  "+request.getServletPath());
         if(header !=null && !header.startsWith("Basic") && header.length()>10) {
             System.out.println("JWT VALIDATE");

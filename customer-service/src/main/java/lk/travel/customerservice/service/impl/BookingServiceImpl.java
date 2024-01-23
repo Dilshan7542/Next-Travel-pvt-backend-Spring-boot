@@ -33,7 +33,8 @@ public class BookingServiceImpl implements BookingService {
         if (bookingRepo.existsById(bookingDTO.getBookingID())) {
             throw new RuntimeException("Booking Already Exist..!");
         }
-        bookingRepo.save(mapper.map(bookingDTO, Booking.class));
+      bookingDTO.setBookingID(bookingRepo.save(mapper.map(bookingDTO, Booking.class)).getBookingID());
+
         return bookingDTO;
     }
 
@@ -81,6 +82,11 @@ public class BookingServiceImpl implements BookingService {
     public List<BookingDTO> getAllBooking() {
         return mapper.map(bookingRepo.findAll(), new TypeToken<List<BookingDTO>>() {
         }.getType());
+    }
+
+    @Override
+    public void makePayment(int bookingID,boolean payment) {
+    bookingRepo.updateBookingByBookingID(bookingID,payment);
     }
 
     private long getBookingHours(LocalDate date, LocalTime time) {

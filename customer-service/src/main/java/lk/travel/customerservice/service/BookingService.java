@@ -13,4 +13,5 @@ public interface BookingService {
     List<BookingDTO> searchBookingCustomerID(int customerID);
     void deleteBooking(int bookingID);
     List<BookingDTO> getAllBooking();
+    void makePayment(int bookingID,boolean payment);
 }

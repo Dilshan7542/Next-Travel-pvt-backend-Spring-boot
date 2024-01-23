@@ -17,16 +17,22 @@ public class BookingController {
     private final BookingService bookingService;
 
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity saveBooking(@RequestBody BookingDTO bookingDTO) {
-        return new ResponseEntity(bookingService.saveBooking(bookingDTO), HttpStatus.OK);
+    public ResponseEntity<BookingDTO> saveBooking(@RequestBody BookingDTO bookingDTO) {
+        return new ResponseEntity<>(bookingService.saveBooking(bookingDTO), HttpStatus.OK);
     }
 
     @PutMapping
     public ResponseEntity<BookingDTO> updateBooking(@RequestBody BookingDTO bookingDTO) {
-        return new ResponseEntity(bookingService.updateBooking(bookingDTO), HttpStatus.OK);
+        return new ResponseEntity<>(bookingService.updateBooking(bookingDTO), HttpStatus.OK);
     }
 
-
+    @PutMapping(path = "payment")
+    public ResponseEntity<Void> updatePaymentOnBooking(@RequestBody BookingDTO bookingDTO) {
+        System.out.println("booing ID : "+bookingDTO.getBookingID());
+        System.out.println(bookingDTO.isPaymentStatus());
+        bookingService.makePayment(bookingDTO.getBookingID(),bookingDTO.isPaymentStatus());
+        return new ResponseEntity(null, HttpStatus.OK);
+    }
 
     @GetMapping(path = "search", params = "bookingID")
     public ResponseEntity<BookingDTO> searchBooking(@RequestParam int bookingID) {
@@ -53,4 +59,5 @@ public class BookingController {
     public ResponseEntity<List<BookingDTO>> getAllBooking() {
         return new ResponseEntity(bookingService.getAllBooking(), HttpStatus.OK);
     }
+
 }

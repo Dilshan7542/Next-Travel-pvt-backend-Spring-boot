@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,20 +14,18 @@ import java.util.List;
 @Setter
 public class TravelDTO {
     private int travelID;
-   // @JsonFormat(pattern = "HH:mm")
+    // @JsonFormat(pattern = "HH:mm")
     @JsonFormat(pattern = "yyy-MM-dd") //
     private LocalDate startDate;
     @JsonFormat(pattern = "yyy-MM-dd")
     private LocalDate endDate;
     private int countDay;
     private int countNight;
-    private int noAdults;
+    private int adults;
     private int children;
-    private int headCount;
-    private int pets;
-    private int guide;
-    private double paidValue;
-    private String remark;
+    private int room;
+    private int vehicleCount;
+    private int vehicleCost;
+    private TravelAreaDTO travelArea;
     private TravelCategoryDTO travelCategory;
-    private List<TravelLocationDTO> travelLocationList;
 }

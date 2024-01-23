@@ -24,16 +24,14 @@ public class Travel implements SuperEntity{
     private LocalDate endDate;
     private int countDay;
     private int countNight;
-    private int noAdults;
+    private int adults;
     private int children;
-    private int headCount;
-    private int pets;
-    private int guide;
-    private double paidValue;
-    private String remark;
-    @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "travel_location",joinColumns = @JoinColumn(name = "travelID"))
-    private List<TravelLocation> travelLocationList;
+    private int room;
+    private int vehicleCount;
+    private int vehicleCost;
+    @ManyToOne
+    @JoinColumn(name = "travel_area")
+    private TravelArea travelArea;
     @ManyToOne
     @JoinColumn(name = "travel_categoryID")
     private TravelCategory travelCategory;
