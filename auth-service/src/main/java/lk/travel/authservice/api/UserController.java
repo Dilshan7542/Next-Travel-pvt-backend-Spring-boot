@@ -22,7 +22,6 @@ public class UserController {
     @PostMapping("/register")
     public ResponseEntity<UserDTO> registerUser(@RequestBody UserDTO userDTO) {
         userDTO.setPwd(passwordEncoder.encode(userDTO.getPwd()));
-
         return ResponseEntity.ok(userService.saveUser(userDTO)); // Response ok Mono work
     }
 
@@ -35,7 +34,6 @@ public class UserController {
     @GetMapping(path = "search/email", params = "email")
     public ResponseEntity<UserDTO> searchByEmailUser(@RequestParam String email) {
         UserDTO userDTO = userService.searchByEmailUser(email);
-        System.out.println("email : "+userDTO.getName());
         return new ResponseEntity<>(userDTO, HttpStatus.OK);
     }
 

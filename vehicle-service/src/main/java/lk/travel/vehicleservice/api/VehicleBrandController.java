@@ -51,7 +51,7 @@ public class VehicleBrandController {
     @DeleteMapping(path = "{vehicleBrandID}")
     public ResponseEntity<VehicleBrandDTO> deleteVehicleBrand(@PathVariable int vehicleBrandID) {
         vehicleBrandService.deleteVehicleBrand(vehicleBrandID);
-        return new ResponseEntity(null, HttpStatus.OK);
+        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
     @GetMapping(path = "all")

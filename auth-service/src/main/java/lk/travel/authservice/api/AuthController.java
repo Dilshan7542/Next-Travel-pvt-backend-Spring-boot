@@ -24,12 +24,10 @@ public class AuthController {
 
     @GetMapping(path = "/**")
     public ResponseEntity<Boolean> allAuthRequest(){
-        System.out.println("ALL VALIDATE TRUE...!!!! (/**)");
         return new ResponseEntity<>(true, HttpStatus.OK);
     }
     @PostMapping(path = "/customer/register")
     public ResponseEntity<CustomerDTO> saveCustomer(@RequestBody CustomerDTO customerDTO){
-        System.out.println("Customer Register Method Invoked");
         customerDTO.setPwd(passwordEncoder.encode(customerDTO.getPwd()));
         CustomerDTO block = WebClient.create(SecurityConstant.CUSTOMER_URL +"/register")
                 .post().body(Mono.just(customerDTO), CustomerDTO.class).retrieve()
@@ -37,12 +35,10 @@ public class AuthController {
         if (block!=null) {
             UserDTO userDTO = userService.saveUser(new UserDTO(customerDTO.getName(), customerDTO.getEmail(), customerDTO.getPwd(), RoleDTO.USER));
             if (userDTO!=null) {
-            System.out.println("Customer Ok.......!!!!");
         return new ResponseEntity<>(block,HttpStatus.OK);
             }
             WebClient.create(SecurityConstant.CUSTOMER_URL+"/"+customerDTO.getCustomerID()).delete().retrieve().toEntity(Void.class);
         }
-        System.out.println("Test Error..!!!");
         throw new RuntimeException("ERROR......!!");
     }
     @GetMapping(path = "/customer/search/email/{email}")

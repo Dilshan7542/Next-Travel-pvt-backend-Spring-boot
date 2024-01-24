@@ -31,12 +31,12 @@ public class BookingController {
         System.out.println("booing ID : "+bookingDTO.getBookingID());
         System.out.println(bookingDTO.isPaymentStatus());
         bookingService.makePayment(bookingDTO.getBookingID(),bookingDTO.isPaymentStatus());
-        return new ResponseEntity(null, HttpStatus.OK);
+        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
     @GetMapping(path = "search", params = "bookingID")
     public ResponseEntity<BookingDTO> searchBooking(@RequestParam int bookingID) {
-        return new ResponseEntity(bookingService.searchBooking(bookingID), HttpStatus.OK);
+        return new ResponseEntity<>(bookingService.searchBooking(bookingID), HttpStatus.OK);
     }
     @GetMapping(path = "search/customer", params = "customerID")
     public ResponseEntity<List<BookingDTO>> searchBookingCustomerID(@RequestParam int customerID) {
@@ -45,19 +45,19 @@ public class BookingController {
         for (BookingDTO bookingDTO : bookingDTOS) {
             System.out.println(bookingDTO.getTravel());
         }
-        return new ResponseEntity(bookingDTOS, HttpStatus.OK);
+        return new ResponseEntity<>(bookingDTOS, HttpStatus.OK);
     }
 
 
     @DeleteMapping(params = "bookingID")
     public ResponseEntity<BookingDTO> deleteBooking(@RequestParam int bookingID) {
         bookingService.deleteBooking(bookingID);
-        return new ResponseEntity(null, HttpStatus.OK);
+        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
     @GetMapping
     public ResponseEntity<List<BookingDTO>> getAllBooking() {
-        return new ResponseEntity(bookingService.getAllBooking(), HttpStatus.OK);
+        return new ResponseEntity<>(bookingService.getAllBooking(), HttpStatus.OK);
     }
 
 }

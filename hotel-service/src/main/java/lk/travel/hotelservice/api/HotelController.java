@@ -18,12 +18,12 @@ public class HotelController {
 
     @PostMapping
     public ResponseEntity<HotelDTO> saveHotel(@RequestBody HotelDTO hotelDTO) {
-        return new ResponseEntity(hotelService.saveHotel(hotelDTO), HttpStatus.OK);
+        return new ResponseEntity<>(hotelService.saveHotel(hotelDTO), HttpStatus.OK);
     }
 
     @PutMapping
     public ResponseEntity<HotelDTO> updateHotel(@RequestBody HotelDTO hotelDTO) {
-        return new ResponseEntity(hotelService.updateHotel(hotelDTO), HttpStatus.OK);
+        return new ResponseEntity<>(hotelService.updateHotel(hotelDTO), HttpStatus.OK);
     }
 
     @PutMapping(path = "image/{hotelID}",  consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
@@ -31,18 +31,18 @@ public class HotelController {
         HotelDTO hotelDTO = hotelService.searchHotel(hotelID);
         hotelDTO.setImage(image);
         hotelService.updateHotel(hotelDTO);
-        return new ResponseEntity(null, HttpStatus.OK);
+        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
     @GetMapping(path = "search", params = "hotelID")
     public ResponseEntity<HotelDTO> searchHotel(@RequestParam int hotelID) {
-        return new ResponseEntity(hotelService.searchHotel(hotelID), HttpStatus.OK);
+        return new ResponseEntity<>(hotelService.searchHotel(hotelID), HttpStatus.OK);
     }
 
     @DeleteMapping(path = "{hotelID}")
     public ResponseEntity<HotelDTO> deleteHotel(@PathVariable("hotelID") int hotelID) {
         hotelService.deleteHotel(hotelID);
-        return new ResponseEntity(null, HttpStatus.OK);
+        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
     @GetMapping(path = "all")
