@@ -30,7 +30,6 @@ public class AuthenticationConfig implements AuthenticationProvider {
         String pwd = authentication.getCredentials().toString();
         UserDTO userDTO = userService.searchByEmailUser(userName);
         if(userDTO !=null){
-        System.out.println(userDTO);
             if(passwordEncoder.matches(pwd,userDTO.getPwd())){
                 return new UsernamePasswordAuthenticationToken(userName,pwd,getGrantedAuthority(userDTO.getRole().name()));
             }else{

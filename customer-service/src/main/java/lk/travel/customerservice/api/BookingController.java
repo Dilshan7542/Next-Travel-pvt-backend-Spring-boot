@@ -28,8 +28,6 @@ public class BookingController {
 
     @PutMapping(path = "payment")
     public ResponseEntity<Void> updatePaymentOnBooking(@RequestBody BookingDTO bookingDTO) {
-        System.out.println("booing ID : "+bookingDTO.getBookingID());
-        System.out.println(bookingDTO.isPaymentStatus());
         bookingService.makePayment(bookingDTO.getBookingID(),bookingDTO.isPaymentStatus());
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
@@ -40,11 +38,7 @@ public class BookingController {
     }
     @GetMapping(path = "search/customer", params = "customerID")
     public ResponseEntity<List<BookingDTO>> searchBookingCustomerID(@RequestParam int customerID) {
-        System.out.println(customerID);
         List<BookingDTO> bookingDTOS = bookingService.searchBookingCustomerID(customerID);
-        for (BookingDTO bookingDTO : bookingDTOS) {
-            System.out.println(bookingDTO.getTravel());
-        }
         return new ResponseEntity<>(bookingDTOS, HttpStatus.OK);
     }
 

@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58d1ed3c-3e0b-42d7-b29f-b5c1e9ed9db9" name="Changes" comment="Finalize">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2/storage_v2/_src_/schema/next_travel.5kkxWw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2/storage_v2/_src_/schema/next_travel.5kkxWw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/AuthenticationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/AuthenticationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,20 +99,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGateWayApplication">
-    <configuration name="ApiGateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.apigateway.ApiGateWayApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lk.travel.apigateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.VehicleServiceApplication">
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.authservice.AuthServiceApplication" />
@@ -158,8 +152,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VehicleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="vehicle-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.vehicleservice.VehicleServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.travel.vehicleservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.ApiGateWayApplication" />
+      <item itemvalue="Spring Boot.VehicleServiceApplication" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.HotelServiceApplication" />
       <item itemvalue="Spring Boot.TravelServiceApplication" />
@@ -167,11 +174,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CustomerServiceApplication" />
-        <item itemvalue="Spring Boot.ApiGateWayApplication" />
-        <item itemvalue="Spring Boot.AuthServiceApplication" />
         <item itemvalue="Spring Boot.TravelServiceApplication" />
+        <item itemvalue="Spring Boot.CustomerServiceApplication" />
+        <item itemvalue="Spring Boot.VehicleServiceApplication" />
         <item itemvalue="Spring Boot.HotelServiceApplication" />
+        <item itemvalue="Spring Boot.AuthServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +213,9 @@
       <workItem from="1705427549689" duration="12062000" />
       <workItem from="1705836069370" duration="31000" />
       <workItem from="1706012666669" duration="761000" />
-      <workItem from="1706111302651" duration="1031000" />
+      <workItem from="1706111302651" duration="6023000" />
+      <workItem from="1706162293686" duration="2586000" />
+      <workItem from="1706189322213" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="Update MongoDB">
       <option name="closed" value="true" />
@@ -224,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706013099559</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finalize">
+      <option name="closed" value="true" />
+      <created>1706115863937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706115863937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

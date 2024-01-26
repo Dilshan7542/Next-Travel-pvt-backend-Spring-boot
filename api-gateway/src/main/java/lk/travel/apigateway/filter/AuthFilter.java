@@ -25,23 +25,17 @@ public class AuthFilter extends AbstractGatewayFilterFactory<AuthFilter.Config> 
     public GatewayFilter apply(Config config) {
         return (exchange, chain) -> {
             String path = exchange.getRequest().getURI().getPath().split("/",3)[2];
-            System.out.println("request acrept test : "+path);
             if(routeValidator.predicate.test(path)){
-            System.out.println("Boolean True : "+path);
-
                 if(!exchange.getRequest().getHeaders().containsKey(HttpHeaders.AUTHORIZATION)) {
                     throw new RuntimeException("Unauthorized!! Authorization Header Not available");
                 }
                   String token = exchange.getRequest().getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);
-                System.out.println("Token : "+token);
-
                 HttpHeaders httpHeaders = new HttpHeaders();
                 httpHeaders.set(HttpHeaders.AUTHORIZATION,token);
                 ResponseEntity<Boolean> authResponse = restTemplate.exchange("http://localhost:8081/" + path, HttpMethod.GET, new HttpEntity<>(httpHeaders), Boolean.class);
                 if (authResponse.getStatusCode().value() > 299) {
                     throw new RuntimeException("Unauthorized..!!");
                 }
-
                 if (!authResponse.getBody()) {
                     throw new RuntimeException("Unauthorized..!!");
                 }

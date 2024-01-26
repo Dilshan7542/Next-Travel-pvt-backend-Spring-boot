@@ -944,8 +944,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="277" parent="1" name="next_travel">
-      <IntrospectionTimestamp>2024-01-17.13:30:42</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-01-17.02:30:42</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2024-01-26.03:18:25</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-01-25.16:18:25</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="278" parent="1" name="performance_schema">
@@ -1026,7 +1026,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="298" parent="288" name="bookingid">
-      <AutoIncrement>8</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1095,7 +1095,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="312" parent="289" name="customerid">
-      <AutoIncrement>124</AutoIncrement>
+      <AutoIncrement>129</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1272,7 +1272,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Type>btree</Type>
     </index>
     <column id="350" parent="293" name="travelid">
-      <AutoIncrement>6</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1405,7 +1405,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="377" parent="296" name="vehicleid">
-      <AutoIncrement>9</AutoIncrement>
+      <AutoIncrement>10</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
