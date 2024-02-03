@@ -18,7 +18,7 @@ spring:
     generate-ddl: true
   #This is for config client
   config:
-    import: optional:configserver:http://localhost:8762
+    import: optional:configserver:http://localhost:8888/
   #This is for eureka client
 
 eureka:
