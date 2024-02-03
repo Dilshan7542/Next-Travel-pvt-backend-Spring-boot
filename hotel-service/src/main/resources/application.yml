@@ -1,0 +1,49 @@
+server:
+  port: 8083
+  tomcat:
+    max-http-form-post-size: 10MB
+    max-swallow-size: 10MB
+
+#This is for datasource
+spring:
+  application:
+    name: hotel-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/next_travel?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+  #This is for jpa
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+
+  codec:
+    max-in-memory-size: 10MB
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  #This is for config client
+  config:
+    import: optional:configserver:http://localhost:8762
+
+#This is for eureka client
+eureka:
+  client:
+    register-with-eureka: true #default
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+    healthcheck:
+      enabled: true #deafult
+# This is for spring activator (we can check mapping and health more... for microservice architecture)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+

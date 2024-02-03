@@ -1,15 +1,16 @@
 server:
-  port: 8762
+  port: 8888
 spring:
   application:
     name: _config-server
 #This is for config server to allocate where we put configuration on the location
   cloud:
    config:
-    server:
+     server:
       git:
-        uri: ads
+        uri: https://github.com/Dilshan7542/Next-Travel-Microservice-Configurations.git
         default-label: master
+
 #This is for eureka client
 eureka:
   client:

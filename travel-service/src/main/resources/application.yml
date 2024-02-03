@@ -1,16 +1,24 @@
 server:
-  port: 8081
-spring:
-  application:
-    name: auth-service
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/next_travel
-      auto-index-creation: true
+  port: 8084
 
+spring:
+  #This is for datasource
+  application:
+    name: travel-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/next_travel?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+  #This is for jpa
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    generate-ddl: true
   #This is for config client
   config:
-    import: optional:configserver:http://localhost:8888/
+    import: optional:configserver:http://localhost:8762
   #This is for eureka client
 
 eureka:
@@ -27,3 +35,4 @@ management:
     web:
       exposure:
         include: "*"
+

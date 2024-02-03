@@ -55,12 +55,10 @@ spring:
         - AuthFilter
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
 
-
-
-
   #This is for config client
- # config:
-  #  import: optional:configserver:http://localhost:8762
+  config:
+    import: optional:configserver:http://localhost:8888/
+
 
 #This is for eureka client
 eureka:

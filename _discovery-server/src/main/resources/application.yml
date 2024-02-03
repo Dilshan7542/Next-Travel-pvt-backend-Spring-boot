@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: _discovery-server
+
 eureka:
   instance:
     hostname: localhost

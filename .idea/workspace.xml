@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58d1ed3c-3e0b-42d7-b29f-b5c1e9ed9db9" name="Changes" comment="Finalize">
+    <list default="true" id="58d1ed3c-3e0b-42d7-b29f-b5c1e9ed9db9" name="Changes" comment="clean code">
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/travel-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2/storage_v2/_src_/schema/next_travel.5kkxWw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4758e392-43be-44b8-95c4-6af5163f40c2/storage_v2/_src_/schema/next_travel.5kkxWw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/lk/travel/apigateway/filter/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/AuthenticationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/lk/travel/authservice/security/AuthenticationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_discovery-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_discovery-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/travel-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,40 +57,43 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/.WORK AREA/Spring/thogakade/thogakade&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.49655172&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d86255d6f012b59225a9f18a50cc576f&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/.WORK AREA/Spring-boot/Spring-Microservices/Next-Travel-PVT-Backend/auth-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.49655172",
+    "spring.configuration.checksum": "d86255d6f012b59225a9f18a50cc576f",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;oracle&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "oracle",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\auth-service\src\main\resources" />
+      <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\customer-service\src\main\resources" />
+      <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\hotel-service\src\main\resources" />
       <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\api-gateway\src\main\java\lk\travel\apigateway" />
       <recent name="D:\.WORK AREA\Spring-boot\Spring-Microservices\Next-Travel-PVT-Backend\auth-service\src\main\java\lk\travel\authservice" />
     </key>
@@ -99,7 +112,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.VehicleServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerServiceApplication">
+    <configuration name="ApiGateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.apigateway.ApiGateWayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.travel.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppConfigServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="_config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.nextravel.server.AppConfigServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.nextravel.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.authservice.AuthServiceApplication" />
@@ -126,32 +165,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="hotel-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.hotelservice.HotelServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lk.travel.hotelservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TravelServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="travel-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.travelservice.TravelServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lk.travel.travelservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="VehicleServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="vehicle-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lk.travel.vehicleservice.VehicleServiceApplication" />
@@ -166,19 +179,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.VehicleServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGateWayApplication" />
+      <item itemvalue="Spring Boot.AppConfigServer" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
-      <item itemvalue="Spring Boot.HotelServiceApplication" />
-      <item itemvalue="Spring Boot.TravelServiceApplication" />
+      <item itemvalue="Spring Boot.VehicleServiceApplication" />
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.TravelServiceApplication" />
-        <item itemvalue="Spring Boot.CustomerServiceApplication" />
-        <item itemvalue="Spring Boot.VehicleServiceApplication" />
-        <item itemvalue="Spring Boot.HotelServiceApplication" />
         <item itemvalue="Spring Boot.AuthServiceApplication" />
+        <item itemvalue="Spring Boot.CustomerServiceApplication" />
+        <item itemvalue="Spring Boot.ApiGateWayApplication" />
+        <item itemvalue="Spring Boot.AppConfigServer" />
+        <item itemvalue="Spring Boot.VehicleServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +229,10 @@
       <workItem from="1706111302651" duration="6023000" />
       <workItem from="1706162293686" duration="2586000" />
       <workItem from="1706189322213" duration="6221000" />
+      <workItem from="1706248257479" duration="6814000" />
+      <workItem from="1706279491919" duration="80000" />
+      <workItem from="1706607970811" duration="1635000" />
+      <workItem from="1706992161968" duration="11220000" />
     </task>
     <task id="LOCAL-00001" summary="Update MongoDB">
       <option name="closed" value="true" />
@@ -241,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706115863937</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="clean code">
+      <option name="closed" value="true" />
+      <created>1706248426003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706248426003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +275,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update MongoDB" />
     <MESSAGE value="Finalize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalize" />
+    <MESSAGE value="clean code" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean code" />
   </component>
 </project>
